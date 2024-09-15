@@ -7,7 +7,14 @@ p{
 }
 .grey{
     color: grey;
+    font-style: italic;
 }
 #secondPara{
     color:blue;
+}
+h1,h2{
+    color:green ;
+}
+p span{
+    background-color: black;
 }

@@ -1,21 +1,9 @@
-html{
-    color:brown;
+body{
     font-size: 22px;
-    border:2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DEE2E8;
+    color: #0F262E;
 }
 p{
-    color: black;
-}
-.grey{
-    color: gray;
-    font-style: italic;
-}
-#secondPara{
-    color:blue;
-}
-h1,h2{
-    color:green ;
-}
-.highlight{
-    background-color:red;
+    color: 
 }

@@ -1,12 +1,13 @@
-body{
+html{
     color:brown;
     font-size: 22px;
+    border:2px solid black;
 }
 p{
     color: black;
 }
 .grey{
-    color: grey;
+    color: gray;
     font-style: italic;
 }
 #secondPara{
@@ -15,6 +16,6 @@ p{
 h1,h2{
     color:green ;
 }
-p span{
-    background-color: black;
+.highlight{
+    background-color:red;
 }

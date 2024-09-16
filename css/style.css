@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 .container{
-    border: 2px dashed red;
-    border-bottom: 3px double blue;
+    border: 10px double red;
     font-size: 1.5rem;
     margin: 1.5em;
     padding: 1.5em;
-    outline: 5px solid black;
-    outline-offset: -20px;
+}
+.circle{
+    margin: 2em auto;
+    border: 10px solid green;
+    border-radius: 50%;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    outline: 5px dashed black;
+    outline-offset: 10px;
 }
 
  

@@ -1,0 +1,71 @@
+body{
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    border-radius: 2em;
+    background-color: rgb(191, 194, 187);
+    font-size: 1.5rem;
+}
+
+ul{
+    border: solid;
+    border-color: rgb(191, 194, 187);;
+    border-radius: 50px;
+    margin: 1rem;
+    padding: auto;
+    background-color: white;
+
+}
+
+h2{
+    text-align: center;
+    color: darkblue;
+}
+
+p{
+    color: rgb(220, 20, 87);
+    padding: 1.1rem;
+    text-align: center;
+}
+ul li{
+   margin-right: 0.5rem;
+    border-radius: 20px;
+   padding: 6px;
+   
+}
+ul li:hover{
+    background-color: blue;
+}
+ul li::marker{
+    content: none;
+}
+.flex{
+    display: flex;
+
+}
+
+a{
+    cursor: pointer;
+    color: rgb(79, 6, 68);
+    text-decoration: none;
+    
+}
+a:visited{
+    color: rgb(30, 137, 131);
+}
+
+a:hover,a:focus{
+
+    color: white;
+    
+}
+
+a:active{
+    color: black;
+}
+
+
+
+
+
+

@@ -1,27 +1,28 @@
 body{
-    font-size: 1.75rem;
+    font: 1.5rem;
 }
-.block{
-    width: 30vw;
+.column{
+    columns: 4 250px;
+    column-rule: 3px solid grey;
+    column-gap: 2rem;
+}
+.column p{
+    margin-top: 0;
+}
+.column h2{
+    margin: 0;
     background-color: black;
     color: white;
-    height: 30vw;
-    padding: 1rem;
+    padding: 3rem;
+    break-inside: avoid;
 }
-.left{
-    float:left;
-    margin-right:20px ;
+.column .quote{
+    color: cadetblue;
+    text-align: center;
+    font-size: 2rem;
+    column-span: all;
+    margin: 1rem;
 }
-.right{
-    float:right;
-    margin-left: 20px;
-}
-.clear{
-    clear:both;
-}
-section{
-    background-color: bisque;
-    border: 2px solid grey;
-    padding:1rem;
-    display: flow-root;
+.noWrap{
+    white-space: nowrap ;
 }

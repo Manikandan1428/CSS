@@ -1,52 +1,57 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-size: 1.5rem;
-    min-height: 200vh;
 }
-.outer-container{
-    border: 3px dashed black;
-    width: 75vw;
-    height: 85vh;
-    margin: 40px auto;
+
+section{
+    height: 100vw;
 }
-.inner-container{
-    border: 3px solid blue;
-    margin:150px auto;
-    width: 40vw;
-    height: 50vh;
-    position: relative;
+.blue{
+    background-color: blue;
 }
-.box{
-    width: 150px;
-    height: 150px;
+.red{
+    background-color: red;
+}
+.green{
+    background-color:green ;
+}
+header,footer{
     color: white;
+    text-align: center;
+    height: 80px;
     padding: 1rem;
 }
-.absolute{
-    background-color: blue;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-}
-.relative{
-    background-color: red;
-    position: relative;
-    top: 100px;
-    left: 100px;
-}
-.fixed{
-    background-color: green;
-    position: fixed;
-    top: 50px;
-    left: 100px;
-}
-.sticky{
-    background-color: black;
+header{
     position: sticky;
     top: 0px;
-    
+    font-size: 4rem;
+}
+footer{
+    position: sticky;
+    bottom: 0px;
+    font-size: 2rem;
+    background-color: black;
+}
+a{
+    color: white;
+}
+.mani{
+    background-color: rgb(147, 207, 28);
+    font-size: inherit;
+    color: blue;
+    position: fixed;
+    top: 30%;
+    left:0px;
+    z-index: 1;
+}
+.bell{
+    background-color: rgb(147, 207, 28);
+    font-size: inherit;
+    color: blue;
+    position: fixed;
+    top: 35%;
+    left:0px;
+    z-index: 1;
 }

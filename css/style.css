@@ -36,5 +36,5 @@ body{
 }
 .box:nth-child(2){
     flex: 2 2 200px;
-    order: -0;
+    order: -1;
 }

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+.outer-container{
+    border: 3px dashed black;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+}
+.inner-container{
+    border: 3px solid blue;
+    margin:150px auto;
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+}
+.absolute{
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+}

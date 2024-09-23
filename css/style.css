@@ -17,7 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-content: space-evenly;
 }
 .box{
@@ -31,11 +31,10 @@ body{
     display:flex ;
     justify-content: center;
     align-items: center;
-    flex-basis: 100px;
-    flex-grow: 1;
-
+    flex: 1 1 200px;
 
 }
 .box:nth-child(2){
-    flex-grow: 2;
+    flex: 2 2 200px;
+    order: -0;
 }

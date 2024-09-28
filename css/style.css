@@ -3,3 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color:burlywood ;
+    background-image: radial-gradient(whitesmoke,grey);
+    display: flex;
+    flex-direction: column;
+}
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+header,footer{
+    background-color: rgb(20, 44, 77);
+    color: white;
+    position: sticky;
+}
+header{
+    top: 0;
+}
+nav{
+    background-color: white;
+    color:rgb(20, 44, 77); 
+    padding: 0.5rem;
+    border-bottom: 3px solid black;
+}
+main{
+    flex-grow: 1;
+}
+footer{
+    bottom: 0;
+}
+/* small screen*/
+@media screen and  (min-width:576px) {
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,rgb(20, 44, 77));
+    }
+    nav{
+        display: none;
+    }
+}
+/* Medium screen*/
+@media screen and (min-width:768px){
+    body{
+        background-color: #FFF4B5;
+        background-image: radial-gradient(white,#BEC6A0);
+    }
+    nav{
+        display: block;
+        font-style: italic;
+    }
+    header,footer{
+        background-color: #708871;
+    }
+}
+@media screen and (min-width:992px){
+    body{
+        background-color: #FFF4B5;
+        background-image: radial-gradient(white,#FFB4C2);
+        color: #667BC6;
+    }
+    nav{
+        display: block;
+        font-family:"Dancing Script", cursive; ;
+        background-color: white;
+        color: #DA7297;
+    }
+    header,footer{
+        background-color: #DA7297;
+    }
+}
+@media screen and (max-height:426px) and (min-aspect-ratio:7/4){
+    body{
+        background-color: white;
+        background-image: linear-gradient(white,black);
+    }
+    nav{
+        display: block;
+    }
+}

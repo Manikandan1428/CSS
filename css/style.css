@@ -27,6 +27,8 @@ img{
 
 body{
     min-height: 100vh;
+    background-color:aliceblue;
+    background-image:linear-gradient(gold,white);
 }
 
 

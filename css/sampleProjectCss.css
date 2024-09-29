@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Guerrilla&family=Sofadi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Sofadi One", system-ui;
+    scroll-behavior: smooth;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke,#475569);
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    position: sticky;
+    background-color:rgb(20,44,77) ;
+    color: whitesmoke;
+    text-align: center;
+}
+header{
+    top: 0;
+}
+nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid black;
+    background-color: white;
+    padding: 0.5rem;
+    color: rgb(20,44,77);
+}
+nav a,nav a:visited{
+    color: hsl(0, 0%, 0%);
+}
+
+nav a:hover,nav a:focus{
+    color:  hsla(0, 0%, 0%, 0.208);
+}
+
+footer{
+    bottom: 0;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.card{
+   scroll-margin-top:8rem ;
+    width: min(100%,350px);
+    background-color: #cbd5e1;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.card img{
+   border: 5px double black; 
+   border-radius: 50%;
+}
+.card figcaption{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+@media screen and (min-width:576px){
+    main{
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+    .card{
+        width: min(100%,400px);
+    }
+    .card :last-child{
+        order: -1;
+    }
+}
+@media screen and (min-width:768px){
+    nav{
+        display: none;
+    }
+    .card{
+        width: min(100%,325px);
+    }
+    .card figure{
+        flex-flow: column-reverse;
+    }
+    .card p{
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width:992px){
+    .card{
+        width: min(100%,400px);
+    }
+    .card :nth-child(2){
+        order: -1;
+    }
+}
+@media screen and (min-width:1200px){
+    .card{
+        width: min(33%-1rem,500px);
+    }
+}
+@media  screen and (min-height:425px) and (min-aspect-ratio:7/4) {
+    h1{
+        font-size: 1.5rem;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        flex-flow: row nowrap;
+    }
+}
+/*
+body{
+    font-size: 1.5rem;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-position: center;
+    min-height: 100vh;
+    height: 80vh;
+    width: 100vw;
+}
+#dribble,#shoot,#jump{
+   background-color: rgb(50, 63, 68);
+   border-radius: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   
+
+}
+
+.image img{
+    border: 3px double white;
+    border-radius: 50%;
+    width: 80%;
+    height: 70%;
+    
+
+}
+.name,figcaption{
+    text-align: center;
+}
+
+body header nav{
+    list-style: none;
+    display: flex;
+    place-content: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    color: rgb(20,44,77);;
+}
+main{
+    background-color:darkslategray;
+    background-image: radial-gradient(white,darkslategray);
+    color: white; 
+    margin: 1rem;   
+}
+li{
+   padding-left: 10px; 
+}
+header,footer{
+    text-align: center;
+    background-color: rgb(20,44,77);
+    color: white;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+footer{
+    position: sticky;
+    bottom: 0;
+} */

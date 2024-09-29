@@ -5,14 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    font-family: "Sofadi One", system-ui;
-    scroll-behavior: smooth;
-}
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
+}
+html{
+    font-family: "Sofadi One", system-ui;
+    scroll-behavior: smooth;
 }
 body{
     font-size: 1.5rem;
@@ -22,7 +23,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-header,footer{
+:where(header,footer){
     position: sticky;
     background-color:rgb(20,44,77) ;
     color: whitesmoke;
@@ -32,25 +33,20 @@ header{
     top: 0;
 }
 nav{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    border: 3px solid black;
     background-color: white;
     padding: 0.5rem;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav a:any-link{
     color: rgb(20,44,77);
 }
-nav a,nav a:visited{
-    color: hsl(0, 0%, 0%);
-}
-
 nav :is(a:hover,a:focus){
     color:  hsla(0, 0%, 0%, 0.208);
 }
 
-footer{
-    bottom: 0;
-}
 main{
     flex-grow: 1;
     display: flex;
@@ -59,8 +55,11 @@ main{
     gap: 1.5rem;
     padding: 1rem;
 }
+footer{
+    bottom: 0;
+}
 .card{
-   scroll-margin-top:8rem ;
+    scroll-margin-top:8rem ;
     width: min(100%,350px);
     background-color: #cbd5e1;
     border: 3px solid black;
@@ -74,15 +73,33 @@ main{
     display: flex;
     flex-flow: column nowrap;
 }
+.card:target{
+    border: 5px solid green;
+}
 .card img{
    border: 5px double black; 
    border-radius: 50%;
+}
+.card:nth-child(2){
+    background-color: bisque;
 }
 .card figcaption{
     font-weight: bolder;
     text-align: center;
     font-size: 2rem;
     margin: 1rem;
+}
+.card p::before{
+    content: open-quote;
+    font-size: 3em;
+}
+.card p::after{
+    content: close-quote;
+    font-size: 3em;
+}
+
+.card img:not([alt]){
+    border: 5px solid red;
 }
 @media screen and (min-width:576px){
     main{
@@ -93,7 +110,7 @@ main{
     .card{
         width: min(100%,400px);
     }
-    .card :last-child{
+    .card:last-child{
         order: -1;
     }
 }
@@ -115,7 +132,7 @@ main{
     .card{
         width: min(100%,400px);
     }
-    .card :nth-child(2){
+    .card:nth-child(2){
         order: -1;
     }
 }

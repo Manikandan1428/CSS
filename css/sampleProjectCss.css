@@ -89,6 +89,8 @@ footer{
     font-size: 2rem;
     margin: 1rem;
 }
+
+/* Pseudo */
 .card p::before{
     content: open-quote;
     font-size: 3em;

@@ -5,12 +5,13 @@
 }
 :root{
     --BGCOLOR:rgb(20, 44, 77);
+    --WHITE-SMOKE:whitesmoke;
 }
 body{
     font-size: 1.5rem;
     min-height: 100vh;
     background-color:burlywood ;
-    background-image: radial-gradient(whitesmoke,grey);
+    background-image: radial-gradient(var(--WHITE-SMOKE),grey);
     display: flex;
     flex-direction: column;
 }
@@ -22,7 +23,7 @@ header,nav,main,footer{
     text-align: center;
 }
 header,footer{
-    background-color: rgb(20, 44, 77);
+    background-color: var(--BGCOLOR);
     color: white;
     position: sticky;
 }
@@ -31,7 +32,7 @@ header{
 }
 nav{
     background-color: white;
-    color:rgb(20, 44, 77); 
+    color:var(--BGCOLOR); 
     padding: 0.5rem;
     border-bottom: 3px solid black;
 }
@@ -45,7 +46,7 @@ footer{
 @media screen and  (min-width:576px) {
     body{
         background-color: green;
-        background-image: radial-gradient(whitesmoke,rgb(20, 44, 77));
+        background-image: radial-gradient(--WHITE-SMOKE,var(--BGCOLOR));
     }
     nav{
         display: none;

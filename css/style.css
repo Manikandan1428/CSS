@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --BGCOLOR:rgb(20, 44, 77);
+}
 body{
     font-size: 1.5rem;
     min-height: 100vh;

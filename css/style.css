@@ -11,7 +11,8 @@
     --DARK-COLOR:black;
 
     /*FONT*/
-    --FS:1.5rem;
+    --FS:clamp(1.75rem,3vh,2.25rem);
+    --FS-small:clamp(0.75rem ,2vh,1rem);
     --FS-XL:3rem;
 
 
@@ -35,7 +36,7 @@
 
 
 body{
-    font-size: 1.5rem;
+    font-size:var(--FS);
     min-height: 100vh;
     background-color:burlywood ;
     background-image: radial-gradient(var(--WHITE-SMOKE),var(--BODY-BGCOLOR));

@@ -12,7 +12,7 @@
 
     /*FONT*/
     --FS:clamp(1.75rem,3vh,2.25rem);
-    --FS-small:clamp(0.75rem ,2vh,1rem);
+    --FS-SM:clamp(0.75rem ,2vh,1rem);
     --FS-XL:3rem;
 
 

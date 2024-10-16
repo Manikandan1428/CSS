@@ -67,12 +67,10 @@ nav{
 }
 main{
     flex-grow: 1;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column nowrap;
-    border: var(--BORDERS);
-    gap:0.5rem;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,300px));
+    gap: min(2vh,20px);
+
     
 }
 main aside{
